@@ -10,15 +10,11 @@ async function invalidLoginTest() {
             "platformName": "Android",
             "appium:automationName": "uiautomator2",
             "appium:deviceName": "oneplus",
-            "appium:app": "D:\\Balaji\\Company\\Cyient Nov 2025\\TypescriptAutomationProject\\files\\khan-academy-7-3-2.apk",
-            "appium:udid": "f1d22477"
+            "appium:udid": "f1d22477",
+            "appium:appPackage":"org.khanacademy.android",
+            "appium:appActivity":"org.khanacademy.android.ui.library.MainActivity"
         }
     })
-
-    // const element=await driver.$("//android.widget.TextView[@text='Sign in']")
-    // element.click()
-
-    await driver.activateApp("org.khanacademy.android")
 
     await driver.$("//android.widget.TextView[@text='Sign in']").click()
 

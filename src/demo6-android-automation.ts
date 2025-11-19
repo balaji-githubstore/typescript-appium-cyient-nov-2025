@@ -1,6 +1,6 @@
 import {remote} from "webdriverio"
 
-async function intallApp() {
+async function invalidLoginTest() {
 
     const driver= await remote({
         "protocol":"http",
@@ -15,15 +15,21 @@ async function intallApp() {
         }
     })
 
-    let actualPageSrc:string= await driver.getPageSource();
-    console.log(actualPageSrc);
+    // const element=await driver.$("//android.widget.TextView[@text='Sign in']")
+    // element.click()
+
+    await driver.$("//android.widget.TextView[@text='Sign in']").click()
+
+    await driver.$("//android.widget.TextView[@text='Sign in']").click()
+
+    await driver.$("//android.widget.EditText[contains(@text,'e-mail address')]").setValue("hello@gmail.com")
 
     await driver.pause(3000)
     
 }
 
 
-intallApp()
+invalidLoginTest()
 
 
 

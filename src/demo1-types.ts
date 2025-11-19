@@ -59,8 +59,21 @@ console.log(typeof employee);
 
 
 //creating your own datatype
-type numberOrStringType=number | string | number[] 
+type numberOrStringType=number | string 
 
-let z:numberOrStringType=34
+let z:numberOrStringType 
 
-// will start at 10:30 AM IST
+type demoFile1={
+"files1":string
+}
+
+type demoFile2={
+    "file2":string
+}
+
+
+export type consolidatedFile=demoFile1 & demoFile2
+
+
+
+

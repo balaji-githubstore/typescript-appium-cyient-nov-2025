@@ -1,3 +1,15 @@
+import {consolidatedFile} from "./demo1-types"
+
+let valueZ:consolidatedFile
+
+valueZ={file2:"",files1:""}
+
+valueZ={
+    "files1":"path1",
+    "file2":"path2"
+}
+
+
 function add(a:number,b:number,c:number=2,d?:string):number{
     return a+b+c;
 }

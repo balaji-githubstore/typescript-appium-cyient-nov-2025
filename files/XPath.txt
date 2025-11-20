@@ -22,6 +22,8 @@ Example:
 
 //android.widget.TextView[contains(@text,'incorrect')]
 
+//android.widget.ImageView[@content-desc='Settings']
+
 
 ele-->(<android.widget.TextView text="Your login or password is incorrect.">)
 
@@ -36,4 +38,14 @@ new UiSelector().textContains("e-mail address").className("android.widget.EditTe
 
 new UiSelector().textContains("incorrect")
 
+//count --> starts at 0
+new UiSelector().text("Sign in").instance(1)
+
+//index- available in the inspector
+new UiSelector().text("Sign in")
+
+
+new UiSelector().description("Settings")
+
+new UiSelector().descriptionContains("Settin")
 

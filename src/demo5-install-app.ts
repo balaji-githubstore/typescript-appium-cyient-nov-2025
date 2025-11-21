@@ -10,7 +10,6 @@ async function intallApp() {
             "platformName":"Android",
             "appium:automationName":"uiautomator2",
             "appium:deviceName":"oneplus",
-            "appium:app":"D:\\Balaji\\Company\\Cyient Nov 2025\\TypescriptAutomationProject\\files\\khan-academy-7-3-2.apk",
             "appium:udid":"f1d22477"
         }
     })

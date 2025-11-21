@@ -10,7 +10,8 @@ async function invalidLoginTest() {
             "platformName": "Android",
             "appium:automationName": "uiautomator2",
             "appium:deviceName": "oneplus",
-            "appium:browserName": "chrome"
+            "appium:browserName": "chrome",
+            "appium:chromedriverExecutable":""
         }
     })
 

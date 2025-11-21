@@ -38,8 +38,17 @@ async function hybridAppTest() {
      //click on NEXT
      //span[text()='NEXT']
      //button[@data-qa='submit-username']
+     await driver.$("//span[text()='NEXT']").setValue("jack123")
+
+     let actualError=await driver.$("//p[contains(text(),'valid')]").getText()
+     console.log(actualError);
 
      //get the error and print it 
+
+     if(await driver.isKeyboardShown())
+     {
+        await driver.hideKeyboard()
+     }
 
 }
 

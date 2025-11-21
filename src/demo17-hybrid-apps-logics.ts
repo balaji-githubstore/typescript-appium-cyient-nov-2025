@@ -11,7 +11,6 @@ async function hybridAppTest() {
             "appium:automationName":"uiautomator2",
             "appium:deviceName":"oneplus",
             "appium:chromedriverExecutable":"D:\\Balaji\\Company\\Cyient Nov 2025\\TypescriptAutomationProject\\files\\chromedriver.exe"
-
         }
     })
 
@@ -35,7 +34,12 @@ async function hybridAppTest() {
    
     //currently we will be in the WEB_VIEW where //input[@data-qa='username'] is present
      await driver.$("//input[@data-qa='username']").setValue("jack123")
+
      //click on NEXT
+     //span[text()='NEXT']
+     //button[@data-qa='submit-username']
+
+     //get the error and print it 
 
 }
 

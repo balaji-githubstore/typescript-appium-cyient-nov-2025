@@ -41,6 +41,9 @@ new UiSelector().textContains("incorrect")
 //count --> starts at 0
 new UiSelector().text("Sign in").instance(1)
 
+//present on the inspector attribute 
+new UiSelector().text("Sign in").index(1)
+
 //index- available in the inspector
 new UiSelector().text("Sign in")
 
@@ -49,3 +52,24 @@ new UiSelector().description("Settings")
 
 new UiSelector().descriptionContains("Settin")
 
+
+----------------------------------
+
+XPath - html
+
+//tagname[@attribute='']
+//tagname[text()='']
+
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+Example:
+//span[text()='Log in to Docusign']
+
+-----------------------------
+
+["NATIVE_APP","WEB_VIEW1","WEB_VIEW2"]
+
+
+
+https://storage.googleapis.com/chrome-for-testing-public/133.06.941/win64/chromedriver-win64.zip

@@ -17,6 +17,11 @@ async function intallApp() {
     let actualPageSrc:string= await driver.getPageSource();
     console.log(actualPageSrc);
 
+    let ele=await driver.$("//*")
+    ele.waitForDisplayed({timeout:30000})
+
+    
+
     await driver.pause(3000)
     
 }

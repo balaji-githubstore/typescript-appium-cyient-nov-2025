@@ -1,3 +1,5 @@
+import path from "path";
+
 let a:number=10
 a=20
 a=20.3
@@ -72,7 +74,10 @@ type demoFile2={
 }
 
 
-export type consolidatedFile=demoFile1 & demoFile2
+// export type consolidatedFile=demoFile1 & demoFile2
+
+
+console.log(path.join(__dirname, '..', 'files', 'khan-academy-7-3-2.apk'));
 
 
 
